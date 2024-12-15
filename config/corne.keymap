@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "aliases.h" //file contains aliases for most symbols for the danish language
-
+/ {
   macros {
         kp_dk_LBKT: kp_dk_LBKT { // this is a macro for writting "[" on danish keyboards.
             label = "kp_dk_LBKT";
@@ -151,8 +151,7 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
-
-/ {
+};
     behaviors {
         hrmt: hrmt {
             compatible = "zmk,behavior-hold-tap";
