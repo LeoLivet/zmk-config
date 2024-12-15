@@ -18,8 +18,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             require-prior-idle-ms = <125>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <13 14 15 16 22 21 20 19>;
+            flavor = "tap-preferred";
         };
     };
 
