@@ -34,9 +34,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q             &kp W             &kp F          &kp P               &kp B      &kp J    &kp L               &kp U          &kp Y              &mt SINGLE_QUOTE DOUBLE_QUOTES  &kp INTERNATIONAL_1
-&kp LCTRL     &hrmt LEFT_GUI A  &hrmt LEFT_ALT R  &hrmt LCTRL S  &hrmt LEFT_SHIFT T  &kp G      &kp M    &hrmt LEFT_SHIFT N  &hrmt RCTRL E  &hrmt RIGHT_ALT I  &hrmt RIGHT_GUI O               &kp SEMICOLON
-&out OUT_TOG  &kp Z             &kp X             &kp C          &kp D               &kp V      &kp K    &kp H               &kp COMMA      &kp DOT            &kp LEFT_BRACKET                &kp SQT
+&kp TAB       &kp Q             &kp W             &kp F          &kp P               &kp B      &kp J    &kp L               &kp U          &kp Y              &mt SINGLE_QUOTE DOUBLE_QUOTES  &kp LBKT
+&kp LCTRL     &hrmt LEFT_GUI A  &hrmt LEFT_ALT R  &hrmt LCTRL S  &hrmt LEFT_SHIFT T  &kp G      &kp M    &hrmt LEFT_SHIFT N  &hrmt RCTRL E  &hrmt RIGHT_ALT I  &hrmt RIGHT_GUI O               &kp SQT
+&out OUT_TOG  &kp Z             &kp X             &kp C          &kp D               &kp V      &kp K    &kp H               &kp COMMA      &kp DOT            &kp LEFT_BRACKET                &kp SEMI
                                                   &kp ESCAPE     &lt 1 SPACE         &kp TAB    &kp RET  &lt 2 BACKSPACE     &lt 4 DELETE
             >;
         };
@@ -71,9 +71,9 @@
         Func {
             bindings = <
 &studio_unlock  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans             &trans  &trans  &trans
+&trans          &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans             &trans  &trans  &trans
             >;
         };
     };
