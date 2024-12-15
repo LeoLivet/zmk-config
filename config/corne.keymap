@@ -24,7 +24,7 @@
 &kp TAB       &kp Q  &kp W  &kp F       &kp P      &kp B      &kp J    &kp L          &kp U      &kp Y    &kp P     &kp BSPC
 &kp LCTRL     &kp A  &kp R  &kp S       &kp T      &kp G      &kp M    &kp N          &kp E      &kp I    &kp O     &kp SQT
 &out OUT_TOG  &kp Z  &kp X  &kp C       &kp D      &kp V      &kp K    &kp H          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                            &kp ESCAPE  &kp SPACE  &kp TAB    &kp RET  &kp BACKSPACE  &kp RALT
+                            &kp ESCAPE  &kp SPACE  &kp TAB    &kp RET  &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -64,6 +64,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Nav {
+            bindings = <
+&trans  &trans        &trans        &trans     &trans          &trans    &kp K_REDO    &kp K_PASTE     &kp K_PASTE     &kp K_CUT     &kp K_UNDO  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &trans
+                                    &trans     &trans          &trans    &trans        &trans          &trans
             >;
         };
     };
