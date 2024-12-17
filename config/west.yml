@@ -9,7 +9,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      remote: infused-kim
+      import: app/west.yml
  
   self:
     path: config
