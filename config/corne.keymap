@@ -228,7 +228,7 @@
 
         Nav {
             bindings = <
-&trans  &trans        &trans        &trans     &studio_unlock          &trans    &kp K_REDO    &kp K_PASTE     &kp K_PASTE     &kp K_CUT     &kp K_UNDO  &trans
+&trans  &trans        &trans        &trans     &studio_unlock  &trans    &kp K_REDO    &kp K_PASTE     &kp K_PASTE     &kp K_CUT     &kp K_UNDO  &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &trans
 &trans  &trans        &trans        &trans     &trans          &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &trans
                                     &trans     &trans          &trans    &trans        &trans          &trans
@@ -246,10 +246,10 @@
 
         Sym {
             bindings = <
-&kp LS(NUMBER_6)  &kp_dk_BLSH      &kp_dk_LBKT           &kp_dk_RBKT            &kp LS(N7)        &mt SINGLE_QUOTE DOUBLE_QUOTES    &trans      &trans          &trans     &trans        &trans        &trans
-&kp_dk_PIPE       &kp_dk_LBRC      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp_dk_RBRC       &trans                            &trans      &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&kp_dk_UNDER      &kp RA(AT_SIGN)  &kp LESS_THAN         &kp GREATER_THAN       &kp LS(NUMBER_1)  &kp LS(N0)                        &kp LS(N5)  &kp PLUS        &kp MINUS  &kp ASTERISK  &trans        &trans
-                                                         &trans                 &trans            &trans                            &trans      &trans          &trans
+&kp LS(NUMBER_6)  &kp_dk_BLSH       &kp_dk_LBKT    &kp_dk_RBKT           &kp LS(N7)        &mt SINGLE_QUOTE DOUBLE_QUOTES    &trans      &trans          &trans     &trans        &trans        &trans
+&kp_dk_PIPE       &kp_dk_LBRC       &kp LS(N8)     &kp LS(N9)            &kp_dk_RBRC       &trans                            &trans      &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&kp_dk_UNDER      &kp RA(NUMBER_2)  &kp BACKSLASH  &kp LS(GREATER_THAN)  &kp LS(NUMBER_1)  &kp LS(N0)                        &kp LS(N5)  &kp PLUS        &kp SLASH  &kp ASTERISK  &trans        &trans
+                                                   &trans                &trans            &trans                            &trans      &trans          &trans
             >;
         };
 
