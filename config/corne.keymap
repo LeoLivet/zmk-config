@@ -4,155 +4,196 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "aliases.h" //file contains aliases for most symbols for the danish language
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
-#include "aliases.h" //file contains aliases for most symbols for the danish language
 / {
-  macros {
-        kp_dk_LBKT: kp_dk_LBKT { // this is a macro for writting "[" on danish keyboards.
+    macros {
+        kp_dk_LBKT: kp_dk_LBKT {
             label = "kp_dk_LBKT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N8>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        kp_dk_RBKT: kp_dk_RBKT { // this is a macro for writting "]" on danish keyboards.
+
+        kp_dk_RBKT: kp_dk_RBKT {
             label = "kp_dk_RBKT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N9>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        kp_dk_LBRC: kp_dk_LBRC { // this is a macro for writting "{" on danish keyboards.
+
+        kp_dk_LBRC: kp_dk_LBRC {
             label = "kp_dk_LBRC";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N7>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        kp_dk_RBRC: kp_dk_RBRC { // this is a macro for writting "}" on danish keyboards.
+
+        kp_dk_RBRC: kp_dk_RBRC {
             label = "kp_dk_RBRC";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N0>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        copy: copy { // this is a macro for copying
+
+        copy: copy {
             label = "copy";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
-        dk_paste: dk_paste { // this is a macro for pasting
+
+        dk_paste: dk_paste {
             label = "dk_paste";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
-        del_word: del_word { // this is a macro for utilising the delete word functionality on windows
+
+        del_word: del_word {
             label = "del_word";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp BACKSPACE>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
-        kp_dk_BLSH: kp_dk_BLSH { // this is a macro for writting "\" on danish keyboards.
+
+        kp_dk_BLSH: kp_dk_BLSH {
             label = "kp_dk_BLSH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp NON_US_BACKSLASH>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NON_US_BACKSLASH>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        kp_dk_PIPE: kp_dk_PIPE { // this is a macro for writting "|" on danish keyboards.
+
+        kp_dk_PIPE: kp_dk_PIPE {
             label = "kp_dk_PIPE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp EQUAL>
-                , <&macro_release &kp RALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp EQUAL>,
+                <&macro_release>,
+                <&kp RALT>;
         };
-        kp_dk_UNDER: kp_dk_UNDER { // this is a macro for writting "_" on danish keyboards.
+
+        kp_dk_UNDER: kp_dk_UNDER {
             label = "kp_dk_UNDER";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp FSLH>
-                , <&macro_release &kp LSHIFT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp FSLH>,
+                <&macro_release>,
+                <&kp LSHIFT>;
         };
-        mod_left: mod_left { // this is a macro for writting "_" on danish keyboards.
+
+        mod_left: mod_left {
             label = "mod_left";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
-        mod_up: mod_up { // this is a macro for writting "_" on danish keyboards.
+
+        mod_up: mod_up {
             label = "mod_up";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp UP>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp UP>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
-        mod_right: mod_right { // this is a macro for writting "_" on danish keyboards.
+
+        mod_right: mod_right {
             label = "mod_right";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
-        mod_down: mod_down { // this is a macro for writting "_" on danish keyboards.
+
+        mod_down: mod_down {
             label = "mod_down";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp DOWN>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp DOWN>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
-};
+    };
+
     behaviors {
         hrmt: hrmt {
             compatible = "zmk,behavior-hold-tap";
@@ -178,10 +219,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q             &kp W             &kp F          &kp P               &kp B      &kp J    &kp L               &kp U          &kp Y              &mt SINGLE_QUOTE DOUBLE_QUOTES  &kp LBKT
-&kp LCTRL     &hrmt LEFT_GUI A  &hrmt LEFT_ALT R  &hrmt LCTRL S  &hrmt LEFT_SHIFT T  &kp G      &kp M    &hrmt LEFT_SHIFT N  &hrmt RCTRL E  &hrmt RIGHT_ALT I  &hrmt RIGHT_GUI O               &kp SQT
-&out OUT_TOG  &kp Z             &kp X             &kp C          &kp D               &kp V      &kp K    &kp H               &kp COMMA      &kp DOT            &kp LEFT_BRACKET                &kp SEMI
-                                                  &kp ESCAPE     &lt 1 SPACE         &kp TAB    &kp RET  &lt 2 BACKSPACE     &lt 4 DELETE
+&kp TAB       &kp Q             &kp W             &kp F          &kp P               &kp B      &kp J        &kp L               &kp U          &kp Y              &mt SINGLE_QUOTE DOUBLE_QUOTES  &kp SEMICOLON
+&kp LCTRL     &hrmt LEFT_GUI A  &hrmt LEFT_ALT R  &hrmt LCTRL S  &hrmt LEFT_SHIFT T  &kp G      &kp M        &hrmt LEFT_SHIFT N  &hrmt RCTRL E  &hrmt RIGHT_ALT I  &hrmt RIGHT_GUI O               &kp SQT
+&out OUT_TOG  &kp Z             &kp X             &kp C          &kp D               &kp V      &kp K        &kp H               &kp COMMA      &kp DOT            &kp LEFT_BRACKET                &kp LBKT
+                                                  &kp ESCAPE     &lt 1 SPACE         &kp TAB    &lt 3 ENTER  &lt 2 BACKSPACE     &lt 4 DELETE
             >;
         };
 
@@ -205,10 +246,10 @@
 
         Sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp LS(NUMBER_6)  &kp_dk_BLSH      &kp_dk_LBKT           &kp_dk_RBKT            &kp LS(N7)        &mt SINGLE_QUOTE DOUBLE_QUOTES    &trans      &trans          &trans     &trans        &trans        &trans
+&kp_dk_PIPE       &kp_dk_LBRC      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp_dk_RBRC       &trans                            &trans      &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&kp_dk_UNDER      &kp RA(AT_SIGN)  &kp LESS_THAN         &kp GREATER_THAN       &kp LS(NUMBER_1)  &kp LS(N0)                        &kp LS(N5)  &kp PLUS        &kp MINUS  &kp ASTERISK  &trans        &trans
+                                                         &trans                 &trans            &trans                            &trans      &trans          &trans
             >;
         };
 
