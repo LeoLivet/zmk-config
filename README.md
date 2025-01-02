@@ -1,4 +1,7 @@
 My ZMK config for my corne keyboard.
+![My Corne Layout](https://github.com/user-attachments/assets/788c8a56-22fc-4c24-91c0-e55e2a5c5f5c)
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 I was getting a little frustrated when starting to use the keyboard that windows is wonky with different language inputs.
 Having to often juggle between my pc's randomly switching between Danish or English keyboard input was frustrating so i am making this to 
