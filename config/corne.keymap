@@ -254,18 +254,18 @@
         Sym {
             bindings = <
 &kp LS(NUMBER_6)  &kp_dk_BLSH       &kp_dk_LBKT      &kp_dk_RBKT          &kp LS(N7)        &kp LS(BACKSLASH)        &kp LS(GRAVE)  &caret_single   &trans     &trans            &trans        &trans
-&kp_dk_PIPE       &kp_dk_LBRC       &kp LS(N8)       &kp LS(N9)           &kp_dk_RBRC       &kp RA(RIGHT_BRACKET)    &kp GRAVE      &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &trans
-&kp_dk_UNDER      &kp RA(NUMBER_2)  &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp LS(NUMBER_1)  &kp LS(N0)               &kp LS(N5)     &kp MINUS       &kp SLASH  &kp LS(ASTERISK)  &trans        &trans
+&kp_dk_PIPE       &kp_dk_LBRC       &kp LS(N8)       &kp LS(N9)           &kp_dk_RBRC       &kp RA(RIGHT_BRACKET)    &kp LS(N5)     &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &trans
+&kp_dk_UNDER      &kp RA(NUMBER_2)  &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp LS(NUMBER_1)  &kp LS(N0)               &kp GRAVE      &kp MINUS       &kp SLASH  &kp LS(ASTERISK)  &trans        &trans
                                                      &kp LS(MINUS)        &kp LS(N5)        &kp LS(NUMBER_3)         &trans         &trans          &trans
             >;
         };
 
         Func {
             bindings = <
-&studio_unlock  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans             &trans  &trans  &trans
+&studio_unlock  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans           &trans     &trans         &trans        &trans
+&trans          &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LEFT_GUI  &trans
+&trans          &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans           &trans     &trans         &trans        &trans
+                                 &trans  &trans  &trans             &trans  &trans           &trans
             >;
         };
 
