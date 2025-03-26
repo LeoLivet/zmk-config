@@ -229,7 +229,7 @@
             bindings = <
 &kp LS(NUMBER_2)  &kp Q             &kp W             &kp F          &kp P               &kp B        &kp J        &kp L               &kp U          &kp Y              &mt SINGLE_QUOTE DOUBLE_QUOTES  &kp SEMICOLON
 &kp BACKSLASH     &hrmt LEFT_GUI A  &hrmt LEFT_ALT R  &hrmt LCTRL S  &hrmt LEFT_SHIFT T  &kp G        &kp M        &hrmt LEFT_SHIFT N  &hrmt RCTRL E  &hrmt RIGHT_ALT I  &hrmt RIGHT_GUI O               &kp SQT
-&kp LS(NUBS)      &kp Z             &kp X             &kp C          &kp D               &kp V        &kp K        &kp H               &kp COMMA      &kp DOT            &kp BACKSLASH                   &kp LBKT
+&kp NUBS          &kp Z             &kp X             &kp C          &kp D               &kp V        &kp K        &kp H               &kp COMMA      &kp DOT            &kp BACKSLASH                   &kp LBKT
                                                       &lt 5 ESCAPE   &lt 1 SPACE         &lt 6 TAB    &lt 3 ENTER  &lt 2 BACKSPACE     &lt 4 DELETE
             >;
         };
